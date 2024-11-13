@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferretec - Productos</title>
+    <link rel="icon" href="imgs/logo-favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container-fluid">
+            <a href="./index.html" class="navbar-brand">
+                <img src="../imgs/Logo-FERRETEC-mono.png" alt="" width="65px">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="gap:1rem;">
+                    <li class="nav-item roboto-bold-subtitles">
+                        <a href="../index.html" class="nav-link" aria-current="page">Inicio</a>
+                    </li>
+                    <li class="nav-item roboto-bold-subtitles">
+                        <a href="./productos.html" class="nav-link active" aria-current="page">Productos</a>
+                    </li>
+                    <li class="nav-item roboto-bold-subtitles dropdown">
+                        <a href="./tiendas.html" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Tiendas</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li>
+                                <a href="./tiendas.html#online" class="dropdown-item roboto-medium">Online</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <a href="./tiendas.html#fisicas" class="dropdown-item roboto-medium">Físicas</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item roboto-bold-subtitles">
+                        <a href="./servicios.html" class="nav-link" aria-current="page">Servicios</a>
+                    </li>
+                    <li class="nav-item roboto-bold-subtitles">
+                        <a href="./ofertas.html" class="nav-link" aria-current="page">Ofertas</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0" style="gap:1rem;">
+                    <li class="nav-item roboto-bold-subtitles">
+                        <a href="./sobre-nosotros.html" class="nav-link" aria-current="page">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item roboto-bold-subtitles">
+                        <a href="./contacto.html" class="nav-link" aria-current="page">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="text-white text-center py-5 position-relative" style="overflow: hidden; background-image: url('../imgs/fondo-productos.png'); background-size: cover; background-position: center;">
+        <div class="container position-relative d-flex flex-column justify-content-center align-items-center" style="z-index: 1; height: 100%; background-color: #4a4a4ab9; ">
+            <h1 class="display-4 roboto-bold-titles">PRODUCTOS</h1>
+            <p class="lead">Busca tus productos que siempre has querido... o necesitado.</p>
+        </div>
+    </header>
+    <div class="container">
+        <div class="row mt-2 mb-2 g-4">
+            <div class="col-md-3">
+                <div class="card h-100 border-0">
+                    <img src="../imgs/power-drill.png" class="card-img-top p-5" data-bs-toggle="modal" data-bs-target="#modalTaladro" style="cursor: pointer;" alt="Taladro Eléctrico">
+                    <div class="card-body d-flex flex-column border-top">
+                        <h5 class="card-title">Taladro Eléctrico</h5>
+                        <p class="card-text flex-grow-1">Potente taladro eléctrico para todas tus necesidades de perforación.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card h-100 border-0">
+                    <img src="../imgs/llave-inglesa.png" class="card-img-top" data-bs-toggle="modal" data-bs-target="#modalLlaveInglesa" style="cursor: pointer;" alt="Llave Inglesa">
+                    <div class="card-body d-flex flex-column border-top">
+                        <h5 class="card-title">Llave Inglesa</h5>
+                        <p class="card-text flex-grow-1">Llave inglesa ajustable para trabajos de plomería y mecánica.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card h-100 border-0">
+                    <img src="../imgs/hammer-nail.png" class="card-img-top" data-bs-toggle="modal" data-bs-target="#modalMartillo" style="cursor: pointer;" alt="Martillo de Uña">
+                    <div class="card-body d-flex flex-column border-top">
+                        <h5 class="card-title">Martillo de Uña</h5>
+                        <p class="card-text flex-grow-1">Martillo de uña resistente para clavar y retirar clavos sin esfuerzo apenas.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card h-100 border-0">
+                    <img src="../imgs/precission-destornilladores.png" class="card-img-top" data-bs-toggle="modal" data-bs-target="#modalDestornilladores" style="cursor: pointer;" alt="Destornillador de Precisión">
+                    <div class="card-body d-flex flex-column border-top">
+                        <h5 class="card-title">Destornilladores de Precisión</h5>
+                        <p class="card-text flex-grow-1">Juego de destornilladores de precisión para trabajos delicados.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card h-100 border-0">
+                    <img src="../imgs/handsaw.png" style="cursor: pointer;" class="card-img-top" data-bs-toggle="modal" data-bs-target="#modalSierra" alt="Sierra de Mano">
+                    <div class="card-body d-flex flex-column border-top">
+                        <h5 class="card-title">Sierra de Mano</h5>
+                        <p class="card-text flex-grow-1">Sierra de mano afilada para cortes precisos en madera.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card h-100 border-0">
+                    <img src="../imgs/destornillador.png" style="cursor: pointer;" class="card-img-top" data-bs-toggle="modal" data-bs-target="#modalDestornillador" alt="Destornillador">
+                    <div class="card-body d-flex flex-column border-top">
+                        <h5 class="card-title">Destornillador</h5>
+                        <p class="card-text flex-grow-1">Destornillador ergonómico para un mejor agarre y precisión.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card h-100 border-0">
+                    <img src="../imgs/alicates.png" style="cursor: pointer;" class="card-img-top" data-bs-toggle="modal" data-bs-target="#modalAlicates" alt="Alicates">
+                    <div class="card-body d-flex flex-column border-top">
+                        <h5 class="card-title">Alicates</h5>
+                        <p class="card-text flex-grow-1">Alicates multiusos para trabajos de corte y sujeción.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card h-100 border-0">
+                    <img src="../imgs/cm-tape.png" style="cursor: pointer;" class="card-img-top" data-bs-toggle="modal" data-bs-target="#modalCintaMetrica" alt="Cinta Métrica">
+                    <div class="card-body d-flex flex-column border-top">
+                        <h5 class="card-title">Cinta Métrica</h5>
+                        <p class="card-text flex-grow-1">Cinta métrica metálica duradera para medir con precisión.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modales -->
+    <!-- Modal Básico -->
+    <div class="modal fade" id="modalTaladro" tabindex="-1" aria-labelledby="modalTaladroLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTaladroLabel">Taladro Eléctrico</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Potente taladro eléctrico para todas tus necesidades de perforación.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal de Confirmación -->
+    <div class="modal fade" id="modalLlaveInglesa" tabindex="-1" aria-labelledby="modalLlaveInglesaLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLlaveInglesaLabel">Llave Inglesa</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Llave inglesa ajustable para trabajos de plomería y mecánica.</p>
+                    <div id="confirmationMessage" class="alert alert-success d-none" role="alert">
+                        Aceptado
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary" id="acceptButton">Aceptar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal de Formulario -->
+    <div class="modal fade" id="modalMartillo" tabindex="-1" aria-labelledby="modalMartilloLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalMartilloLabel">Martillo de Uña</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="nombre">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensaje" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="mensaje" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal de Alerta -->
+    <div class="modal fade" id="modalDestornilladores" tabindex="-1" aria-labelledby="modalDestornilladoresLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalDestornilladoresLabel">Destornilladores de Precisión</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="alert alert-warning" role="alert">
+                        Juego de destornilladores de precisión para trabajos delicados.
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal de Pantalla Completa -->
+    <div class="modal fade" id="modalSierra" tabindex="-1" aria-labelledby="modalSierraLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalSierraLabel">Sierra de Mano</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Sierra de mano afilada para cortes precisos en madera.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal de Carga -->
+    <div class="modal fade" id="modalDestornillador" tabindex="-1" aria-labelledby="modalDestornilladorLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalDestornilladorLabel">Destornillador</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex justify-content-center">
+                        <div class="spinner-border" role="status">
+                            <span class="visually-hidden">Cargando...</span>
+                        </div>
+                    </div>
+                    <p class="mt-3">Destornillador ergonómico para un mejor agarre y precisión.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal Deslizante (Slide Modal) -->
+    <div class="modal fade" id="modalAlicates" tabindex="-1" aria-labelledby="modalAlicatesLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-slide">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalAlicatesLabel">Alicates</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Alicates multiusos para trabajos de corte y sujeción. Estos alicates están diseñados para ofrecer la máxima eficiencia y durabilidad en una variedad de aplicaciones. Con un diseño ergonómico, proporcionan un agarre cómodo y seguro, lo que permite un uso prolongado sin fatiga.</p>
+                    <p>Los alicates son herramientas esenciales en cualquier caja de herramientas, ya que pueden ser utilizados para una amplia gama de tareas, desde cortar cables y alambres hasta sujetar y doblar materiales. Están fabricados con acero de alta calidad, lo que garantiza su resistencia y larga vida útil.</p>
+                    <p>Además, estos alicates cuentan con un mecanismo de bloqueo que permite mantenerlos cerrados cuando no están en uso, lo que facilita su almacenamiento y transporte. Ya sea que seas un profesional o un aficionado al bricolaje, estos alicates serán una adición valiosa a tu colección de herramientas.</p>
+                    <p>Características adicionales incluyen:</p>
+                    <ul>
+                        <li>Mandíbulas de precisión para un corte limpio y preciso.</li>
+                        <li>Revestimiento antioxidante para una mayor durabilidad.</li>
+                        <li>Mango antideslizante para un mejor control.</li>
+                        <li>Disponibles en varios tamaños para diferentes aplicaciones.</li>
+                    </ul>
+                    <p>Con estos alicates, podrás abordar cualquier proyecto con confianza y facilidad. No importa la tarea, estos alicates están diseñados para ofrecer un rendimiento superior y una fiabilidad inigualable.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal con Pestañas (Tabbed Modal) -->
+    <div class="modal fade" id="modalCintaMetrica" tabindex="-1" aria-labelledby="modalCintaMetricaLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalCintaMetricaLabel">Cinta Métrica</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="descripcion-tab" data-bs-toggle="tab" data-bs-target="#descripcion" type="button" role="tab" aria-controls="descripcion" aria-selected="true">Descripción</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="especificaciones-tab" data-bs-toggle="tab" data-bs-target="#especificaciones" type="button" role="tab" aria-controls="especificaciones" aria-selected="false">Especificaciones</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="descripcion" role="tabpanel" aria-labelledby="descripcion-tab">
+                            <p class="mt-3">Cinta métrica metálica duradera para medir con precisión.</p>
+                        </div>
+                        <div class="tab-pane fade" id="especificaciones" role="tabpanel" aria-labelledby="especificaciones-tab">
+                            <p class="mt-3">Longitud: 5 metros<br>Material: Acero inoxidable</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p class="mb-0">&copy; 2023 Ferretec. Todos los derechos reservados.</p>
+            <ul class="list-inline">
+                <li class="list-inline-item">
+                    <a href="./sobre-nosotros.html" class="text-white">Sobre Nosotros</a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="./contacto.html" class="text-white">Contacto</a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="https://www.cofan.es/images/content/336x222/privado(2).jpg" class="text-white">Política de Privacidad</a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#terminos" class="text-white">Términos y Condiciones</a>
+                </li>
+            </ul>
+            <p class="mt-2">Designed by <a href="https://www.linkedin.com/in/david-guerrero-rodriguez" class="text-white" target="_blank">David Guerrero</a></p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('acceptButton').addEventListener('click', function() {
+            var confirmationMessage = document.getElementById('confirmationMessage');
+            confirmationMessage.classList.remove('d-none');
+        });
+    </script>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

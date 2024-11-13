@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferretec - Ofertas</title>
+    <link rel="icon" href="imgs/logo-favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .carousel-control-prev,
+        .carousel-control-next {
+            top: 50%;
+            transform: translateY(-50%);
+            width: 5%;
+        }
+
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            background-color: black;
+        }
+
+        @keyframes slideRight {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        .header-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 200%;
+            height: 100%;
+            background-image: url('../imgs/fondo-ofertas.png'), url('../imgs/fondo-ofertas.png');
+            background-size: contain;
+            background-repeat: repeat-x;
+            animation: slideRight 20s linear infinite;
+        }
+
+        .carousel-caption {
+            position: static;
+            padding: 1rem;
+            background-color: rgba(175, 175, 175, 0.5);
+            color: rgb(0, 0, 0);
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container-fluid">
+            <a href="../index.html" class="navbar-brand">
+                <img src="../imgs/Logo-FERRETEC-mono.png" alt="" width="65px">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="gap:1rem;">
+                    <li class="nav-item roboto-bold-subtitles">
+                        <a href="../index.html" class="nav-link" aria-current="page">Inicio</a>
+                    </li>
+                    <li class="nav-item roboto-bold-subtitles">
+                        <a href="./productos.html" class="nav-link" aria-current="page">Productos</a>
+                    </li>
+                    <li class="nav-item roboto-bold-subtitles dropdown">
+                        <a href="./tiendas.html" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Tiendas</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li>
+                                <a href="./tiendas.html#online" class="dropdown-item roboto-medium">Online</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <a href="./tiendas.html#fisicas" class="dropdown-item roboto-medium">Físicas</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item roboto-bold-subtitles">
+                        <a href="./servicios.html" class="nav-link" aria-current="page">Servicios</a>
+                    </li>
+                    <li class="nav-item roboto-bold-subtitles">
+                        <a href="./ofertas.html" class="nav-link active" aria-current="page">Ofertas</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0" style="gap:1rem;">
+                    <li class="nav-item roboto-bold-subtitles">
+                        <a href="./sobre-nosotros.html" class="nav-link" aria-current="page">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item roboto-bold-subtitles">
+                        <a href="./contacto.html" class="nav-link" aria-current="page">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="text-white text-center py-5 position-relative" style="overflow: hidden;">
+        <div class="header-background"></div>
+        <div class="container position-relative d-flex flex-column justify-content-center align-items-center" style="z-index: 1; height: 100%; border-radius: 5px; background-color: #4a4a4a8b;">
+            <h1 class="display-4 roboto-bold-titles">OFERTAS</h1>
+            <p class="lead font-weight-bold">No desaproveches el momento</p>
+            <p class="lead font-weight-bold">que no sabes si volverá.</p>
+        </div>
+    </header>
+
+    <div class="container my-5">
+        <!-- Oferta del día -->
+        <section id="ofertas-diarias" class="mb-5">
+            <h2 class="text-center mb-4">Oferta del día</h2>
+            <div class="card">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="../imgs/oferta-2.png" class="img-fluid rounded-start" alt="Producto Destacado">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">2x1 en guantes profesionales de tela</h5>
+                            <p class="card-text">Guantes profesionales de tela diseñados para ofrecer la máxima protección y comodidad. Estos guantes están fabricados con materiales de alta calidad que amortiguan los golpes y protegen contra cortes. Ideales para trabajos de construcción, carpintería y otras tareas que requieren una protección adicional para las manos.</p>
+                            <p class="card-text">Características:</p>
+                            <ul>
+                                <li>Amortiguación de golpes para reducir el impacto en las manos.</li>
+                                <li>Protección contra cortes gracias a su tejido resistente.</li>
+                                <li>Diseño ergonómico que proporciona un ajuste cómodo y seguro.</li>
+                                <li>Transpirables para mantener las manos frescas y secas durante el uso prolongado.</li>
+                                <li>Refuerzos en las áreas de mayor desgaste para una mayor durabilidad.</li>
+                            </ul>
+                            <p class="card-text">Estos guantes son una excelente elección para profesionales que buscan una combinación de protección, comodidad y durabilidad en sus herramientas de trabajo.</p>
+                            <p class="card-text"><small class="text-muted">Precio original: <s>100.00€</s></small></p>
+                            <p class="card-text"><strong class="text-danger">Precio de oferta: 75.00€</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ofertas Mensuales -->
+        <section id="ofertas-mensuales">
+            <h2 class="text-center mb-4">Ofertas Mensuales</h2>
+            <div id="ofertasMensualesCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="../imgs/precission-destornilladores.png" class="d-block w-75" alt="Producto 1">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="carousel-caption d-md-block">
+                                    <h5>Destornilladores de precisión</h5>
+                                    <p>Juego de destornilladores de precisión para trabajos delicados. Incluye varias puntas intercambiables para diferentes tipos de tornillos.</p>
+                                    <p><small class="text-muted">Precio original: <s>20.00€</s></small></p>
+                                    <p><strong class="text-danger">Precio de oferta: 15.00€</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="../imgs/herramienta-1.png" class="d-block w-75" alt="Producto 2">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="carousel-caption d-md-block">
+                                    <h5>Nivel de precisión</h5>
+                                    <p>Nivel de precisión con burbuja para asegurar que tus proyectos estén perfectamente nivelados. Ideal para trabajos de construcción y bricolaje.</p>
+                                    <p><small class="text-muted">Precio original: <s>80.00€</s></small></p>
+                                    <p><strong class="text-danger">Precio de oferta: 60.00€</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="../imgs/llave-inglesa.png" class="d-block w-75" alt="Producto 3">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="carousel-caption d-md-block">
+                                    <h5>Llave inglesa</h5>
+                                    <p>Llave inglesa ajustable para trabajos de plomería y mecánica. Fabricada con materiales de alta calidad para una mayor durabilidad.</p>
+                                    <p><small class="text-muted">Precio original: <s>15.00€</s></small></p>
+                                    <p><strong class="text-danger">Precio de oferta: 10.00€</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="../imgs/alicates.png" class="d-block w-75" alt="Producto 4">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="carousel-caption d-md-block">
+                                    <h5>Alicates</h5>
+                                    <p>Alicates multiusos para trabajos de corte y sujeción. Diseño ergonómico para un agarre cómodo y seguro.</p>
+                                    <p><small class="text-muted">Precio original: <s>18.00€</s></small></p>
+                                    <p><strong class="text-danger">Precio de oferta: 10.00€</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="../imgs/cm-tape.png" class="d-block w-75" alt="Producto 5">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="carousel-caption d-md-block">
+                                    <h5>Cinta métrica</h5>
+                                    <p>Cinta métrica metálica duradera para medir con precisión. Longitud de 5 metros y material resistente para un uso prolongado.</p>
+                                    <p><small class="text-muted">Precio original: <s>10.00€</s></small></p>
+                                    <p><strong class="text-danger">Precio de oferta: 5.99€</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#ofertasMensualesCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#ofertasMensualesCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+    </div>
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p class="mb-0">&copy; 2023 Ferretec. Todos los derechos reservados.</p>
+            <ul class="list-inline">
+                <li class="list-inline-item">
+                    <a href="./sobre-nosotros.html" class="text-white">Sobre Nosotros</a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="./contacto.html" class="text-white">Contacto</a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="https://www.cofan.es/images/content/336x222/privado(2).jpg" class="text-white">Política de Privacidad</a>
+                </li>
+                <li class="list-inline-item"></li>
+                    <a href="#terminos" class="text-white">Términos y Condiciones</a>
+                </li>
+            </ul>
+            <p class="mt-2">Designed by <a href="https://www.linkedin.com/in/david-guerrero-rodriguez" class="text-white" target="_blank">David Guerrero</a></p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

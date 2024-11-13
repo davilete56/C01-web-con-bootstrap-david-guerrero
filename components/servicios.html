@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferretec - Servicios</title>
+    <link rel="icon" href="imgs/logo-favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container-fluid">
+            <a href="./index.html" class="navbar-brand">
+                <img src="../imgs/Logo-FERRETEC-mono.png" alt="" width="65px">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="gap:1rem;">
+                    <li class="nav-item roboto-bold-subtitles">
+                        <a href="../index.html" class="nav-link" aria-current="page">Inicio</a>
+                    </li>
+                    <li class="nav-item roboto-bold-subtitles">
+                        <a href="./productos.html" class="nav-link" aria-current="page">Productos</a>
+                    </li>
+                    <li class="nav-item roboto-bold-subtitles dropdown">
+                        <a href="./tiendas.html" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Tiendas</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li>
+                                <a href="./tiendas.html#online" class="dropdown-item roboto-medium">Online</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <a href="./tiendas.html#fisicas" class="dropdown-item roboto-medium">Físicas</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item roboto-bold-subtitles">
+                        <a href="./servicios.html" class="nav-link active" aria-current="page">Servicios</a>
+                    </li>
+                    <li class="nav-item roboto-bold-subtitles">
+                        <a href="./ofertas.html" class="nav-link" aria-current="page">Ofertas</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0" style="gap:1rem;">
+                    <li class="nav-item roboto-bold-subtitles">
+                        <a href="./sobre-nosotros.html" class="nav-link" aria-current="page">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item roboto-bold-subtitles">
+                        <a href="./contacto.html" class="nav-link" aria-current="page">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="text-white text-center py-5 position-relative" style="overflow: hidden; background-image: url('../imgs/fondo-servicios.png'); background-size: cover; background-position: center;">
+        <div class="container position-relative d-flex flex-column justify-content-center align-items-center" style="z-index: 1; height: 100%; border-radius: 5px; background-color: #4a4a4a;">
+            <h1 class="display-4 roboto-bold-titles">SERVICIOS</h1>
+            <p class="lead">Todos los servicios a un solo click.</p>
+        </div>
+    </header>
+
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-md-4">
+                <select class="form-select" id="serviceSelect">
+                    <option value="" selected disabled>Selecciona un servicio</option>
+                    <option value="electricidad">Electricidad</option>
+                    <option value="albanileria">Albañilería</option>
+                    <option value="fontaneria">Fontanería</option>
+                </select>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <div id="serviceContent" class="p-4 border rounded" style="background-color: #f8f9fa;">
+                    <p>Por favor, selecciona un servicio del menú desplegable para ver más detalles.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p class="mb-0">&copy; 2023 Ferretec. Todos los derechos reservados.</p>
+            <ul class="list-inline">
+                <li class="list-inline-item">
+                    <a href="./sobre-nosotros.html" class="text-white">Sobre Nosotros</a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="./contacto.html" class="text-white">Contacto</a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="https://www.cofan.es/images/content/336x222/privado(2).jpg" class="text-white">Política de Privacidad</a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#terminos" class="text-white">Términos y Condiciones</a>
+                </li>
+            </ul>
+            <p class="mt-2">Designed by <a href="https://www.linkedin.com/in/david-guerrero-rodriguez" class="text-white" target="_blank">David Guerrero</a></p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script>
+        document.getElementById('serviceSelect').addEventListener('change', function() {
+            const serviceContent = document.getElementById('serviceContent');
+            const selectedService = this.value;
+
+            let content = '';
+
+            switch (selectedService) {
+                case 'electricidad':
+                    content = `
+                        <h2><span class="material-icons" style="color: yellow; background-color:black; border-radius:50%; font-size: 1.5rem;">bolt</span> Electricidad</h2> 
+                        <img src="../imgs/electricidad.png" alt="Electricidad" class="img-fluid mb-3" style="width:15rem">
+                        <p>Ofrecemos servicios de instalación y mantenimiento eléctrico para hogares y empresas.</p>
+                        <ul>
+                            <li>Instalación de sistemas eléctricos</li>
+                            <li>Reparación de fallos eléctricos</li>
+                            <li>Mantenimiento preventivo</li>
+                        </ul>
+                        <p>¡No dudes en contactarnos para más información! <a href="./contacto.html" style="text-decoration:none;">Contacto</a></p>
+                    `;
+                    break;
+                case 'albanileria':
+                    content = `
+                        <h2><span class="material-icons" style="color: #F19E39; background-color:black; border-radius:50%; font-size: 1.5rem;">house_siding</span> Albañilería</h2>
+                        <img src="../imgs/albanileria.png" alt="Albañilería" class="img-fluid mb-3" style="width:15rem">
+                        <p>Servicios de construcción y reparación de estructuras de albañilería.</p>
+                        <ul>
+                            <li>Construcción de muros y paredes</li>
+                            <li>Reparación de estructuras</li>
+                            <li>Acabados y revestimientos</li>
+                        </ul>
+                        <p>¡No dudes en contactarnos para más información! <a href="./contacto.html" style="text-decoration:none;">Contacto</a></p>
+                    `;
+                    break;
+                case 'fontaneria':
+                    content = `
+                        <h2><span class="material-icons" style="color: #7AA1D2; background-color:black; border-radius:50%; font-size: 1.5rem;">plumbing</span> Fontanería</h2>
+                        <img src="../imgs/fontaneria.png" alt="Fontanería" class="img-fluid mb-3" style="width:15rem">
+                        <p>Servicios de instalación y reparación de sistemas de fontanería.</p>
+                        <ul>
+                            <li>Instalación de tuberías</li>
+                            <li>Reparación de fugas</li>
+                            <li>Mantenimiento de sistemas de agua</li>
+                        </ul>
+                        <p>¡No dudes en contactarnos para más información! <a href="./contacto.html" style="text-decoration:none;">Contacto</a></p>`;
+                    break;
+                default:
+                    content = '<p>Por favor, selecciona un servicio del menú desplegable para ver más detalles.</p>';
+            }
+
+            serviceContent.innerHTML = content;
+        });
+    </script>
+</body>
+</html>

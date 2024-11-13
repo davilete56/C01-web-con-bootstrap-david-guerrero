@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferretec - Tiendas</title>
+    <link rel="icon" href="imgs/logo-favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container-fluid">
+            <a href="./index.html" class="navbar-brand">
+                <img src="../imgs/Logo-FERRETEC-mono.png" alt="" width="65px">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="gap:1rem;">
+                    <li class="nav-item roboto-bold-subtitles">
+                        <a href="../index.html" class="nav-link" aria-current="page">Inicio</a>
+                    </li>
+                    <li class="nav-item roboto-bold-subtitles">
+                        <a href="./productos.html" class="nav-link" aria-current="page">Productos</a>
+                    </li>
+                    <li class="nav-item roboto-bold-subtitles dropdown">
+                        <a href="./tiendas.html" class="nav-link dropdown-toggle active" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Tiendas</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li>
+                                <a href="./tiendas.html#online" class="dropdown-item roboto-medium">Online</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <a href="./tiendas.html#fisicas" class="dropdown-item roboto-medium">Físicas</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item roboto-bold-subtitles">
+                        <a href="./servicios.html" class="nav-link" aria-current="page">Servicios</a>
+                    </li>
+                    <li class="nav-item roboto-bold-subtitles">
+                        <a href="./ofertas.html" class="nav-link" aria-current="page">Ofertas</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0" style="gap:1rem;">
+                    <li class="nav-item roboto-bold-subtitles">
+                        <a href="./sobre-nosotros.html" class="nav-link" aria-current="page">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item roboto-bold-subtitles">
+                        <a href="./contacto.html" class="nav-link" aria-current="page">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section id="online" class="py-5 ">
+        <div class="container">
+            <h2 class="text-center mb-4">Tiendas Online</h2>
+            <div class="accordion" id="accordionOnline">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Grainger
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionOnline">
+                        <div class="accordion-body">
+                            <img src="../imgs/grainger-logo.png" alt="Distribuidor 1 Logo" width="100px">
+                            <h3><a href="https://www.grainger.com/" style="cursor: pointer; text-decoration:underline; color:black;" target="_blank">Grainger</a></h3>
+                            <p>Ofrece una gran variedad de herramientas, suministros industriales y materiales de construcción.</p>
+                            <ul>
+                                <li><b>Taladro inalámbrico DEWALT:</b> potente y de larga duración, ideal para trabajos de construcción y mantenimiento.</li>
+                                <li><b>Generador portátil Honda:</b> confiable para emergencias o proyectos donde se necesite energía portátil.</li>
+                                <li><b>Martillo demoledor Bosch:</b> diseñado para tareas intensivas de demolición en concreto y otros materiales resistentes.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Hardware World
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionOnline">
+                        <div class="accordion-body">
+                            <img src="../imgs/hardware-logo.png" alt="Distribuidor 2 Logo" width="100px">
+                            <h3><a href="https://www.hardwareworld.com/" style="cursor: pointer; text-decoration:underline; color:black;" target="_blank">Hardware World</a></h3>
+                            <p>Especializada en herramientas, materiales de construcción, electricidad y jardinería.</p>
+                            <ul>
+                                <li><b>Pulverizador Chapin de 1 galón:</b> perfecto para aplicar herbicidas y pesticidas en jardines.</li>
+                                <li><b>Pala para nieve True Temper:</b> resistente y eficaz para retirar nieve y mantener áreas despejadas.</li>
+                                <li><b>Escalera extensible Louisville de 20 pies:</b> herramienta esencial para trabajos de construcción en altura.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Ace Hardware
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionOnline">
+                        <div class="accordion-body">
+                            <img src="../imgs/ace-logo.png" alt="Distribuidor 3 Logo" width="100px">
+                            <h3><a href="https://www.acehardware.com/" style="cursor: pointer; text-decoration:underline; color:black;" target="_blank">Ace Hardware</a></h3>
+                            <p>Además de su red de tiendas físicas, Ace también vende en línea y tiene una amplia selección de herramientas y productos para el hogar y jardín.</p>
+                            <ul>
+                                <li><b>Motosierra EGO de 56V:</b> herramienta inalámbrica de alta potencia, adecuada para trabajos de poda y corte de madera.</li>
+                                <li><b>Desbrozadora a gasolina Stihl FS 56:</b> ideal para mantenimiento de terrenos y jardines.</li>
+                                <li><b>Multiherramienta rotativa Dremel:</b> versátil para diversas aplicaciones, desde bricolaje hasta reparaciones</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            Do it Best
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionOnline">
+                        <div class="accordion-body">
+                            <img src="../imgs/best-logo.png" alt="Distribuidor 3 Logo" width="100px">
+                            <h3><a href="https://www.doitbest.com/" style="cursor: pointer; text-decoration:underline; color:black;" target="_blank">Do it Best</a></h3>
+                            <p>Distribuidor de herramientas, materiales de construcción y artículos para el hogar y jardín.</p>
+                            <ul>
+                                <li><b>Sierra circular Makita de 7-1/4 pulgadas:</b> diseñada para cortes precisos y rápidos en madera y materiales similares.</li>
+                                <li><b>Soplador de hojas Greenworks 40V:</b> útil para mantener patios y jardines libres de hojas y escombros.</li>
+                                <li><b>Cortador de azulejos manual QEP:</b> herramienta esencial para trabajos de remodelación y corte de azulejos</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFive">
+                        <button class="accordion-button fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            Home Depot
+                        </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionOnline">
+                        <div class="accordion-body">
+                            <img src="../imgs/home-depot-logo.png" alt="Distribuidor 3 Logo" width="100px">
+                            <h3><a href="https://corporate.homedepot.com/" style="cursor: pointer; text-decoration:underline; color:black;" target="_blank">Home Depot</a></h3>
+                            <p>Una de las ferreterías más conocidas, con herramientas, materiales de construcción y más.</p>
+                            <ul>
+                                <li><b>Nivel láser Bosch:</b> ofrece precisión en trabajos de alineación y nivelación en construcción.</li>
+                                <li><b>Cortadora de césped Ryobi 40V:</b> ideal para mantenimiento de jardines, con diseño inalámbrico para mayor comodidad.</li>
+                                <li><b>Juego de herramientas mecánicas Husky de 268 piezas:</b> incluye una gran variedad de llaves, dados y más para trabajos mecánicos y de mantenimiento</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr style="height: 3rem; border-top: 5px solid #3A4D9F">
+<!-- Tiendas Físicas -->
+    <section id="fisicas" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Tiendas Físicas</h2>
+            <div class="accordion" id="accordionFisicas">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOneFisicas">
+                        <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOneFisicas" aria-expanded="true" aria-controls="collapseOneFisicas">
+                            Leroy Merlin
+                        </button>
+                    </h2>
+                    <div id="collapseOneFisicas" class="accordion-collapse collapse show" aria-labelledby="headingOneFisicas" data-bs-parent="#accordionFisicas">
+                        <div class="accordion-body">
+                            <img src="../imgs/leroy-logo.png" alt="Distribuidor 1 Logo" width="100px">
+                            <h3><a href="https://www.leroymerlin.es/" style="cursor: pointer; text-decoration:underline; color:black;" target="_blank">Leroy Merlin</a></h3>
+                            <p>Con sucursales en toda España, ofrece productos de ferretería, bricolaje y jardinería.</p>
+                            <ul>
+                                <li><b>Taladro Percutor Bosch:</b> Un taladro de alta potencia ideal para proyectos domésticos y de bricolaje que requiere perforar materiales como concreto o metal​
+                                </li>
+                                <li><b> Pintura para Exteriores Bruguer:</b> Perfecta para uso en paredes y fachadas, con alta resistencia a las inclemencias del clima</li>
+                                <li><b>Kit de Riego por Goteo:</b> Ideal para optimizar el riego de plantas en jardines y huertos, permitiendo ahorro de agua y mayor eficiencia en el mantenimiento de plantas.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwoFisicas">
+                        <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwoFisicas" aria-expanded="false" aria-controls="collapseTwoFisicas">
+                            Bricomart (Obramat)
+                        </button>
+                    </h2>
+                    <div id="collapseTwoFisicas" class="accordion-collapse collapse" aria-labelledby="headingTwoFisicas" data-bs-parent="#accordionFisicas">
+                        <div class="accordion-body">
+                            <img src="../imgs/obramat-logo.png" alt="Distribuidor 2 Logo" width="100px">
+                            <h3><a href="https://www.obramat.es/" style="cursor: pointer; text-decoration:underline; color:black;" target="_blank">Bricomart (ahora Obramat)</a></h3>
+                            <p>Especializada en productos de construcción, ferretería y suministros para profesionales y particulares</p>
+                            <ul>
+                                <li><b>Cemento Cola para Azulejos:</b> Material indispensable para la colocación de azulejos en interiores y exteriores, con alta adherencia y durabilidad</li>
+                                <li><b>Escalera de Aluminio Multiusos:</b> Versátil y resistente, perfecta para uso tanto en el hogar como en proyectos de construcción</li>
+                                <li><b>Pintura Plástica para Interiores:</b> Especialmente formulada para ofrecer un acabado suave y fácil de limpiar en paredes interiores.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThreeFisicas">
+                        <button class="accordion-button fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThreeFisicas" aria-expanded="false" aria-controls="collapseThreeFisicas">
+                            AKÍ Bricolaje
+                        </button>
+                    </h2>
+                    <div id="collapseThreeFisicas" class="accordion-collapse collapse" aria-labelledby="headingThreeFisicas" data-bs-parent="#accordionFisicas">
+                        <div class="accordion-body">
+                            <img src="../imgs/aki-logo.png" alt="Distribuidor 3 Logo" width="100px">
+                            <h3><a href="https://www.leroymerlin.es/aki-leroy/" style="cursor: pointer; text-decoration:underline; color:black;" target="_blank">AKÍ Bricolaje</a></h3>
+                            <p>Cadena española que cuenta con una amplia selección de herramientas y materiales.</p>
+                            <ul>
+                                <li><b>Motosierra EGO de 56V:</b> herramienta inalámbrica de alta potencia, adecuada para trabajos de poda y corte de madera.</li>
+                                <li><b>Desbrozadora a gasolina Stihl FS 56:</b> ideal para mantenimiento de terrenos y jardines.</li>
+                                <li><b>Multiherramienta rotativa Dremel:</b> versátil para diversas aplicaciones, desde bricolaje hasta reparaciones</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFourFisicas">
+                        <button class="accordion-button fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFourFisicas" aria-expanded="false" aria-controls="collapseFourFisicas">
+                            Bauhaus
+                        </button>
+                    </h2>
+                    <div id="collapseFourFisicas" class="accordion-collapse collapse" aria-labelledby="headingFourFisicas" data-bs-parent="#accordionFisicas">
+                        <div class="accordion-body">
+                            <img src="../imgs/bauhaus-logo.png" alt="Distribuidor 3 Logo" width="100px">
+                            <h3><a href="https://www.bauhaus.es/" style="cursor: pointer; text-decoration:underline; color:black;" target="_blank">Bauhaus</a></h3>
+                            <p>Disponible en varias ciudades y ofrece productos de construcción, herramientas y más.</p>
+                            <ul>
+                                <li><b>Sierra circular Makita de 7-1/4 pulgadas:</b>Taladro Percutor Bosch: Un taladro de alta potencia ideal para proyectos domésticos y de bricolaje que requiere perforar materiales como concreto o metal​</li>
+                                <li><b>Soplador de hojas Greenworks 40V:</b> útil para mantener patios y jardines libres de hojas y escombros.</li>
+                                <li><b>Cortador de azulejos manual QEP:</b> herramienta esencial para trabajos de remodelación y corte de azulejos</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFiveFisicas">
+                        <button class="accordion-button fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFiveFisicas" aria-expanded="false" aria-controls="collapseFiveFisicas">
+                            Brico Depot
+                        </button>
+                    </h2>
+                    <div id="collapseFiveFisicas" class="accordion-collapse collapse" aria-labelledby="headingFiveFisicas" data-bs-parent="#accordionFisicas">
+                        <div class="accordion-body">
+                            <img src="../imgs/brico-logo.png" alt="Distribuidor 3 Logo" width="100px">
+                            <h3><a href="https://www.bricodepot.es/" style="cursor: pointer; text-decoration:underline; color:black;" target="_blank">Brico Depot</a></h3>
+                            <p>Se especializa en productos de ferretería, bricolaje y construcción para profesionales y particulares.</p>
+                            <ul>
+                                <li><b>Nivel láser Bosch:</b> ofrece precisión en trabajos de alineación y nivelación en construcción.</li>
+                                <li><b>Cortadora de césped Ryobi 40V:</b> ideal para mantenimiento de jardines, con diseño inalámbrico para mayor comodidad.</li>
+                                <li><b>Juego de herramientas mecánicas Husky de 268 piezas:</b> incluye una gran variedad de llaves, dados y más para trabajos mecánicos y de mantenimiento</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Empresas colaboradoras -->
+        <hr style="height: 3rem; border-top: 5px solid #1E3A5F">
+        <section class="pb-5 pt-2" style="background-color:white;">
+            <div class="container pb-1" >
+                <h2 class="text-center mb-2" style="color:#1E3A5F;">Empresas colaboradoras</h2>
+                <div id="collaboratorsCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="d-flex justify-content-center">
+                                <img src="../imgs/grainger-logo.png" class="d-block" style="max-width: 300px;" alt="Logo 1">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex justify-content-center">
+                                <img src="../imgs/hardware-logo.png" class="d-block" style="max-width: 300px;" alt="Logo 2">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex justify-content-center">
+                                <img src="../imgs/ace-logo.png" class="d-block" style="max-width: 300px;" alt="Logo 3">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex justify-content-center">
+                                <img src="../imgs/best-logo.png" class="d-block" style="max-width: 300px;" alt="Logo 3">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex justify-content-center">
+                                <img src="../imgs/home-depot-logo.png" class="d-block" style="max-width: 300px;" alt="Logo 3">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex justify-content-center">
+                                <img src="../imgs/leroy-logo.png" class="d-block" style="max-width: 300px;" alt="Logo 3">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex justify-content-center">
+                                <img src="../imgs/obramat-logo.png" class="d-block" style="max-width: 300px;" alt="Logo 3">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex justify-content-center">
+                                <img src="../imgs/aki-logo.png" class="d-block" style="max-width: 300px;" alt="Logo 3">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex justify-content-center">
+                                <img src="../imgs/bauhaus-logo.png" class="d-block" style="max-width: 300px;" alt="Logo 3">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex justify-content-center">
+                                <img src="../imgs/brico-logo.png" class="d-block" style="max-width: 300px;" alt="Logo 3">
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#collaboratorsCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" style="background-color:#1E3A5F;" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#collaboratorsCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" style="background-color:#1E3A5F;" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            </section>
+    
+
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p class="mb-0">&copy; 2023 Ferretec. Todos los derechos reservados.</p>
+            <ul class="list-inline">
+                <li class="list-inline-item">
+                    <a href="./sobre-nosotros.html" class="text-white">Sobre Nosotros</a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="./contacto.html" class="text-white">Contacto</a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="https://www.cofan.es/images/content/336x222/privado(2).jpg" class="text-white">Política de Privacidad</a>
+                </li>
+                <li class="list-inline-item"></li>
+                    <a href="#terminos" class="text-white">Términos y Condiciones</a>
+                </li>
+            </ul>
+            <p class="mt-2">Designed by <a href="https://www.linkedin.com/in/david-guerrero-rodriguez" class="text-white" target="_blank">David Guerrero</a></p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
